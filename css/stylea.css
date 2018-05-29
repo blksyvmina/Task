@@ -1,0 +1,233 @@
+
+#menua{
+	background-image: url('../img/menu2.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	min-height: 770px;
+	
+}
+.basliqa{
+	text-align: center;
+	margin-bottom:30px;
+	margin-top:30px;
+}
+.menu-nav{
+	text-align: center;
+}
+.basliqa p{
+	font-family: 'Indie Flower', cursive;
+	color:white;
+	font-size:40px;
+}
+.menu-nav li button{
+	background:none;
+	border:none;
+	outline: none;
+	transition: transform .2s;
+}
+.menu-nav li button:hover{
+	transform: scale(1.4);
+	border:none;
+
+}
+
+#menu-content {
+  margin-top:15px;
+  overflow:auto;
+  padding:30px 2% 30px;
+  background-color:#FFF;
+}
+.yemeka + .yemeka {
+  margin-top:30px;
+}
+
+.yemeka .yemek-basliqa {
+  position:relative;
+  z-index:10;
+}
+
+.yemeka .yemek-basliqa:before {
+  content:"";
+  display:block;
+  position:relative;
+  top:25px;
+  height:1px;
+  width:100%;
+  border-top:1px dashed #151515;
+  z-index:-1;
+}
+
+.yemeka .ada {
+  display: inline-block;
+  font-family:'Cabin', sans-serif;
+  background-color: #FFF;
+  padding-right: 10px;
+  font-weight:400;
+}
+
+.yemeka .qiymeta {
+  float:right;
+  background-color:#FFF;
+  padding-left: 10px;
+  color:#f36700;
+}
+.ada{
+	font-size: 17px;
+	font-family: 'Quicksand';
+}
+
+.burgerimga{
+	height: 300px;
+}
+.burgerimga1{
+	height: 300px;
+	margin-top:60px;
+}
+
+#rezerva{
+	background-image: url('../img/rezerva2.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	min-height: 740px;
+	
+}
+
+/*.yazia{
+  color: darkgreen; 
+  font-family: "Courier";
+  font-size: 40px;
+  margin: 40px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 4s steps(60, end);
+  z-index: 10; 
+}
+
+.yazia:nth-child(2){
+  animation: type2 8s steps(60, end);
+}
+
+.yazia a{
+  color: white;
+  text-decoration: none;
+}
+
+.yazia span{
+  animation: blink 1s infinite;
+}
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+::selection{
+  background: black;
+}*/
+
+.rezervbasliqa p{
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 40px;
+	font-family: 'Indie Flower', cursive;
+	color:white;
+	font-size:40px;
+}
+#rezerv-contenta{
+	width:100%;
+	min-height:450px; 
+	background-color:white;
+	display:none;
+	opacity: 0.8;
+}
+#rezervbtn{
+	width:100%;
+	height:40px;
+	margin-top:180px;
+	background-color:white;
+	border:1px solid white;
+	border-radius: 20px;
+	outline: none;
+    transition :1s;
+    font-family: 'courier';
+    font-size:16px;
+}
+#rezervbtn:hover{
+	opacity:0.5;
+}
+
+#rezerv-contenta input {
+	width:95%;
+	margin-top:40px;
+	height:40px;
+	outline: none;
+	padding-left:9px;
+	font-size:25px;
+	font-family: "indie flower"
+}
+ .tedbira{
+ 	width:95%;
+	margin-top:40px;
+	height:40px;
+	outline: none;
+	padding-left:9px;
+	font-size:25px;
+	font-family: "indie flower"
+ }
+.submita{
+	width:100%;
+	background-color: #B75902;
+	border: 1px solid #B75902;
+	color:black;
+	opacity:0.7;
+}
+.submita:hover{
+	opacity:1.0;
+
+}
+.footer{
+    width: 100%;
+	background-color:#151515;
+	height:290px;
+	margin-top:none;
+
+}
+
+.footeryazi {
+	font-family:calibri;  
+	color:white;
+	font-size:35px;
+	padding-top:20px;
+}
+.footeryazi span{
+	font-family: 'Satisfy', cursive;
+}
+.elaqeicon{
+	font-family:calibri;  
+	color:lightgray;
+	font-size:25px;
+	margin-top:20px;
+}
+.elaqeicon i{
+	background-color: #151515;
+	color:#ADADAD;
+}
+.elaqeicon i:hover{
+    color:#E1E1E1;
+    transform: scale(1.2)
+}
+

@@ -1,0 +1,87 @@
+body { 
+  background: url(../img/rezerva.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.hesab{
+	width:100%;
+	height:530px;
+	box-sizing:border-box;
+	background : rgba(255,255,255,.6);
+	margin-top:80px;
+	padding:30px 70px;
+}
+.profil{
+	 width: 150px;
+    height: 150px;
+    margin: 0 auto 10px;
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+    border:1px solid lightgray;
+}
+.profil:hover{
+	border:1px solid #572414;
+}
+h2{
+	margin:0;
+	padding: 0 0 20px;
+	text-align: center;
+	color:black;
+	font-family: 'Satisfy', cursive;
+	font-size:40px;
+}
+.hesab p{
+	margin:0;
+	padding:0;
+	font-weight: bold;
+	color:black;
+}
+.hesab input{
+	height: 45px;
+	width:100%;
+	margin-bottom: 20px;	
+	outline:none;	
+	
+	background:transparent;
+	
+	
+}
+.hesab input[type="text"],
+.hesab input[type="password"]
+{
+	border:none;
+	border-bottom: 1px solid black;
+
+}
+
+.hesab input[type="submit"]
+{
+	color:black;
+	font-weight: bold;
+
+}
+.hesab input[type="submit"]:hover{
+	
+	background-color: ;
+	border:1px solid #572414;
+
+}
+a{
+	color:black;
+	font-weight: bold;
+	font-size: 14px;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+	color:#572414;
+}
+@media only screen and (max-width: 320px) {
+    .profil{
+    	margin-left:-34px;
+    }
+}
+	

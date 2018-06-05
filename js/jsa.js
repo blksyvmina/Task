@@ -2,14 +2,11 @@
 
 
 function myFunction() {
-    		var x = document.getElementById('rezerv-contenta');
-    		var y = document.getElementById('rezervbtn');
-    		
-       		 x.style.display = 'block';
-       		 y.style.display = 'none';
-    			
-       			 
-				}
+  var x = document.getElementById('rezerv-contenta');
+  var y = document.getElementById('rezervbtn');                  		
+   x.style.display = 'block';
+   y.style.display = 'none';	                     			 
+}
 
 
 function audiof() {
@@ -36,3 +33,7 @@ function audiof5() {
   var x = document.getElementById('sounda5');
   x.play()
 }
+
+
+
+

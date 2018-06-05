@@ -5,8 +5,7 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	min-height: 770px;
-	
+	height: 770px;	
 }
 .basliqa{
 	text-align: center;
@@ -30,9 +29,7 @@
 .menu-nav li button:hover{
 	transform: scale(1.4);
 	border:none;
-
 }
-
 #menu-content {
   margin-top:15px;
   overflow:auto;
@@ -42,12 +39,10 @@
 .yemeka + .yemeka {
   margin-top:30px;
 }
-
 .yemeka .yemek-basliqa {
   position:relative;
   z-index:10;
 }
-
 .yemeka .yemek-basliqa:before {
   content:"";
   display:block;
@@ -58,7 +53,6 @@
   border-top:1px dashed #151515;
   z-index:-1;
 }
-
 .yemeka .ada {
   display: inline-block;
   font-family:'Cabin', sans-serif;
@@ -66,7 +60,6 @@
   padding-right: 10px;
   font-weight:400;
 }
-
 .yemeka .qiymeta {
   float:right;
   background-color:#FFF;
@@ -77,7 +70,6 @@
 	font-size: 17px;
 	font-family: 'Quicksand';
 }
-
 .burgerimga{
 	height: 300px;
 }
@@ -85,64 +77,20 @@
 	height: 300px;
 	margin-top:60px;
 }
-
 #rezerva{
 	background-image: url('../img/rezerva2.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	min-height: 740px;
+	height: 1040px;
+	padding-bottom:250px;
 	
 }
-
-/*.yazia{
-  color: darkgreen; 
-  font-family: "Courier";
-  font-size: 40px;
-  margin: 40px 0 0 10px;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 30em;
-  animation: type 4s steps(60, end);
-  z-index: 10; 
-}
-
-.yazia:nth-child(2){
-  animation: type2 8s steps(60, end);
-}
-
-.yazia a{
-  color: white;
-  text-decoration: none;
-}
-
-.yazia span{
-  animation: blink 1s infinite;
-}
-
-@keyframes type{ 
-  from { width: 0; } 
-} 
-
-@keyframes type2{
-  0%{width: 0;}
-  50%{width: 0;}
-  100%{ width: 100; } 
-} 
-
-@keyframes blink{
-  to{opacity: .0;}
-}
-
-::selection{
-  background: black;
-}*/
-
 .rezervbasliqa p{
 	text-align: center;
 	margin-top: 60px;
-	margin-bottom: 40px;
+	margin-bottom: 70px;
 	font-family: 'Indie Flower', cursive;
 	color:white;
 	font-size:40px;
@@ -153,11 +101,12 @@
 	background-color:white;
 	display:none;
 	opacity: 0.8;
+	color:black;
 }
 #rezervbtn{
 	width:100%;
 	height:40px;
-	margin-top:180px;
+	margin-top:280px;
 	background-color:white;
 	border:1px solid white;
 	border-radius: 20px;
@@ -169,7 +118,6 @@
 #rezervbtn:hover{
 	opacity:0.5;
 }
-
 #rezerv-contenta input {
 	width:95%;
 	margin-top:40px;
@@ -177,7 +125,54 @@
 	outline: none;
 	padding-left:9px;
 	font-size:25px;
+	font-family: "indie flower";
+	
+}
+ ::placeholder{ 
+    color: black;
+    opacity: 1; 
+}
+.submita{
+	width:95%;
+	margin-top:40px;
+	height:45px;
+	float:left;
+	position:relative;
+	box-sizing:border-box;
+	overflow:hidden;
+	outline: none;
+	font-size:25px;
+	background-color: #B75902;
+	border: 1px solid #B75902;
+	color:black;	
 	font-family: "indie flower"
+}
+.submita a{
+	text-decoration: none;
+	font-size:25px;
+	font-family: "indie flower";
+	color:black;
+    transition:all .7s ease;
+    z-index:2;
+    position: relative;
+    margin-bottom:10px;
+
+}
+.eff-4{
+  width:290px;
+  height:53px;
+  left:-290px;
+  background:white;
+  position:absolute;
+  transition:all .7s ease;
+  z-index:1;
+  top:-2px;
+}
+.submita:hover .eff-4{
+  left:0;
+}
+.submita:hover a{
+  color:black;
 }
  .tedbira{
  	width:95%;
@@ -188,46 +183,222 @@
 	font-size:25px;
 	font-family: "indie flower"
  }
-.submita{
-	width:100%;
-	background-color: #B75902;
-	border: 1px solid #B75902;
-	color:black;
-	opacity:0.7;
-}
-.submita:hover{
-	opacity:1.0;
-
+footer{
+	display: block;
 }
 .footer{
     width: 100%;
-	background-color:#151515;
-	height:290px;
-	margin-top:none;
-
+	background-color:#151515;	
+	position: relative;
+    margin-top: -180px; /* altAlan yuksekliginin eksi degeri */
+    height: 320px;
+    clear:both;
+}
+.footer2{
+	width: 100%;
+	background-color:#151515;	
+	position: relative;
+    height: 320px;
+    clear:both;
 }
 
-.footeryazi {
+.footeryazi{
 	font-family:calibri;  
 	color:white;
 	font-size:35px;
-	padding-top:20px;
+	padding-top:15px;
+	width:400px;
 }
 .footeryazi span{
 	font-family: 'Satisfy', cursive;
 }
+.elaqea{
+	font-family:calibri;  
+	color:lightgray;
+	font-size:20px;	
+}
+.elaqeabashliq{
+	font-size:25px;
+}
 .elaqeicon{
 	font-family:calibri;  
 	color:lightgray;
-	font-size:25px;
-	margin-top:20px;
+	font-size:25px;	
+}
+.elaqeicon p{
+	margin-top:0px;
+}
+.elaqea	 i{
+	background-color: #151515;
+	color:#ADADAD;
+	font-size:30px;
+	display: inline-block;	
+	margin-right:8px;
 }
 .elaqeicon i{
 	background-color: #151515;
 	color:#ADADAD;
+	font-size:32px;	
 }
 .elaqeicon i:hover{
     color:#E1E1E1;
     transform: scale(1.2)
+}
+.elaqeicon .fa-facebook-official:hover{
+	color:#3A559F;
+}
+.elaqeicon .fa-twitter:hover{
+	color:#1EA1F3;
+}
+.elaqeicon .fa-instagram:hover{
+	color:#88419D;
+}
+.fikira input{
+	width:150px;
+	outline: none;
+	border-radius:10px;
+	border:none;
+	box-sizing: border-box;
+	padding:4px;
+	background-color: lightgray;
+}
+.fikira p{
+	margin-top:5px;
+	font-size:20px;
+	color:lightgray;
+	/*font-family:calibri;*/  
+}
+textarea{
+	background-color: lightgray;
+}
+#yazia{
+	margin-top:6px;
+	outline: none;
+	width:220px;
+	height: 80px;
+	border-radius:10px;
+	border:none;
+	box-sizing: border-box;
+	padding:5px;
+}
+.fikira button{
+	width:60px;
+	height: 25px;
+	color:black;
+	box-sizing: border-box;
+	padding-bottom: 8px;
+	border:none;
+	background-color: brown;
+	font-family: 'Calibri';
+	outline: none;
+}
+.fikira button:hover{
+	background-color:white;
+	color:brown;
+	font-style: bold;
+
+}
+
+
+@media only screen and (min-width:390px) and (max-width: 514px) { 
+    .burgera button{ 
+    	margin-left:30px;
+    }
+    .salada button{
+    	margin-left:30px;
+    }
+    .soupa button{
+    	margin-left:30px;
+    }
+    .pizzaa button{
+    	margin-left:30px;
+    }
+    .drinka button{
+    	margin-left:30px;
+    }
+    .cakea button{
+    	margin-left:30px;
+    }
+}
+@media only screen and (min-width:514px) and (max-width: 600px){
+	.burgera button{ 
+    	margin-left:50px;
+    }
+    .salada button{
+    	margin-left:50px;
+    }
+    .soupa button{
+    	margin-left:50px;
+    }
+    .pizzaa button{
+    	margin-left:50px;
+    }
+    .drinka button{
+    	margin-left:50px;
+    }
+    .cakea button{
+    	margin-left:50px;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 396px) { 
+    .burgera button{
+    	margin-left:50px;
+    }
+    .soupa button{
+    	margin-left:50px;
+    }
+    .pizzaa button{
+    	margin-left:50px;
+    }
+}
+@media only screen and (max-width: 320px) { 
+    .burgera button{
+    	margin-left:30px;
+    }
+    .soupa button{
+    	margin-left:30px;
+    }
+    .pizzaa button{
+    	margin-left:30px;
+    }
+}
+@media only screen  and (max-width: 768px){
+	
+	.footer{
+		height:180px;
+	}
+	.footer2{
+		height: 160px;
+	}
+	#rezerva{
+		height:1200px;
+	}
+	#rezerv-contenta{
+		height: 740px;
+	}
+	.elaqea{
+		display: none;
+	}
+	.fikira{
+		display: none;
+	}
+	.eff-4{
+		width:630px;
+  		left:-630px;
+	}
+}
+@media only screen and (max-width: 420px){
+    .footeryazi{
+    	padding-top:0px;
+    	width:200px;
+    } 
+    .footer{
+		height:250px;
+		margin-top:-50px;
+	}   
+	.footer2{
+		height: 250px;
+	}
+  
 }
 

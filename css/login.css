@@ -1,8 +1,5 @@
 body { 
   background: url(../img/rezerva.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
 }
 .hesab{
@@ -47,22 +44,79 @@ h2{
 	outline:none;		
 	background:transparent;	
 }
+.submit{
+	position: relative;
+	height: 45px;
+	width:100%;
+	margin-bottom: 20px;
+	font-size:17px;	
+	outline:none;		
+	background:rgba(240,240,240,0.4);
+	border:none;
+}
+button::before, button::after{
+  content:"";
+  width: 0;
+  height: 1px;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #572414 ;
+}
+span::before, span::after{
+  content:"";
+  width:1px;
+  height:0;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #572414;
+}
+button:hover::before, button:hover::after{
+  width: 100%;
+}
+button:hover span::before, button:hover span::after{
+  height: 100%;
+}
+span{
+  display: block;
+}
+.submit::before, .submit::after{
+  transition-delay: 0.2s;
+}
+.submit span::before, .submit span::after{
+  transition-delay: 0s;
+}
+.submit::before{
+  right: 0;
+  top: 0;
+}
+.submit::after{
+  left: 0;
+  bottom: 0;
+}
+.submit span::before{
+  left: 0;
+  top: 0;
+}
+.submit span::after{
+  right: 0;
+  bottom: 0;
+}
+.submit:hover::before, .submit:hover::after{
+  transition-delay: 0s;
+}
+.submit:hover span::before, .submit:hover span::after{
+  transition-delay: 0.2s;
+}
 .hesab input[type="text"],
 .hesab input[type="password"]
 {
 	border:none;
 	border-bottom: 2px solid black;
-
 }
 
-.hesab input[type="submit"]
-{
+.submit{
 	color:black;
 	font-weight: bold;
-
-}
-.hesab input[type="submit"]:hover{
-	border:1px solid #572414;
 }
 a{
 	color:black;
@@ -74,7 +128,6 @@ a{
 a:hover{
 	text-decoration: none;
 	color:#572414;
-
 }
 @media only screen and (max-width: 320px) {
     .profil{

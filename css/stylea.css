@@ -142,8 +142,8 @@
 	overflow:hidden;
 	outline: none;
 	font-size:25px;
-	background-color: #B75902;
-	border: 1px solid #B75902;
+	background-color: #EE5A24;
+	border: 1px solid #EE5A24;
 	color:black;	
 	font-family: "indie flower"
 }
@@ -158,17 +158,17 @@
     margin-bottom:10px;
 
 }
-.eff-4{
+.submitb{
   width:290px;
   height:53px;
   left:-290px;
-  background:white;
+  background:#c23616 ;
   position:absolute;
   transition:all .7s ease;
   z-index:1;
   top:-2px;
 }
-.submita:hover .eff-4{
+.submita:hover .submitb{
   left:0;
 }
 .submita:hover a{
@@ -190,7 +190,7 @@ footer{
     width: 100%;
 	background-color:#151515;	
 	position: relative;
-    margin-top: -180px; /* altAlan yuksekliginin eksi degeri */
+    margin-top: -180px; 
     height: 320px;
     clear:both;
 }
@@ -284,19 +284,19 @@ textarea{
 .fikira button{
 	width:60px;
 	height: 25px;
-	color:black;
+	color:white;
+	margin-left:160px;
 	box-sizing: border-box;
 	padding-bottom: 8px;
 	border:none;
-	background-color: brown;
+	background-color: #d63031;
 	font-family: 'Calibri';
 	outline: none;
 }
 .fikira button:hover{
-	background-color:white;
-	color:brown;
+	background-color:brown;
+	color:white;
 	font-style: bold;
-
 }
 
 
@@ -398,7 +398,6 @@ textarea{
 	}   
 	.footer2{
 		height: 250px;
-	}
-  
+	} 
 }
 

@@ -11,7 +11,7 @@ body {
 	padding:30px 70px;
 }
 .profil{
-	 width: 150px;
+	width: 150px;
     height: 150px;
     margin: 0 auto 10px;
     display: block;
@@ -20,7 +20,7 @@ body {
     border:1px solid lightgray;
 }
 .profil:hover{
-	border:1px solid #572414;
+	border:2px solid black;
 }
 h2{
 	margin:0;
@@ -46,29 +46,34 @@ h2{
 }
 .submit{
 	position: relative;
-	height: 45px;
+	height:45px;
 	width:100%;
-	margin-bottom: 20px;
+	margin-bottom:20px;
 	font-size:17px;	
-	outline:none;		
-	background:rgba(240,240,240,0.4);
+	outline:none;	
+	opacity:0.85;	
+	background:#c0392b/*rgba(240,240,240,0.4)*/;
 	border:none;
+	color:black;
+	font-weight: bold
 }
 button::before, button::after{
   content:"";
   width: 0;
-  height: 1px;
+  height: 2px;
   position: absolute;
   transition: all 0.2s linear;
-  background: #572414 ;
+  background: /*#572414*/ black ;
+  transition-delay: 0.2s;
 }
 span::before, span::after{
   content:"";
-  width:1px;
+  width:2px;
   height:0;
   position: absolute;
   transition: all 0.2s linear;
-  background: #572414;
+  background: /*#572414*/ black;
+  transition-delay: 0s;
 }
 button:hover::before, button:hover::after{
   width: 100%;
@@ -78,12 +83,6 @@ button:hover span::before, button:hover span::after{
 }
 span{
   display: block;
-}
-.submit::before, .submit::after{
-  transition-delay: 0.2s;
-}
-.submit span::before, .submit span::after{
-  transition-delay: 0s;
 }
 .submit::before{
   right: 0;
@@ -114,9 +113,8 @@ span{
 	border-bottom: 2px solid black;
 }
 
-.submit{
-	color:black;
-	font-weight: bold;
+.submit:hover{
+	opacity:1;
 }
 a{
 	color:black;
